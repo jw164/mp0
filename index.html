@@ -9,25 +9,46 @@
 <body>
   <main class="page">
     <section class="card" role="region" aria-labelledby="name">
-      <!-- 图片 150×150，水平居中 -->
+
       <img
         class="avatar"
-        src="./images/profile.jpg"
+        src="./profile.jpg"
         alt="Portrait of Your Name"
         width="150" height="150"
       />
-      <!-- 标题 -->
-      <h1 id="name">Your Name</h1>
-      <!-- 简介：可左对齐或居中，这里左对齐 -->
+   
+      <h1 id="name">tao</h1>
+  
+      <p class="email">jw164@illinois.edu</p >
+  
       <p class="bio">
-        I am a student in CS409. I enjoy web development and scientific computing.
-        This is my MP0 card built with only HTML and CSS.
-      </p>
-      <!-- 链接：水平居中 -->
-      <a class="link" href="https://github.com/" target="_blank" rel="noopener noreferrer">
-        Visit my GitHub
-      </a>
+      I am a Master’s student in Information Management at UIUC with a background in Polymer Materials. I enjoy applying data analysis, Python, SQL, and visualization tools like Tableau and PowerBI to solve real-world problems in supply chain and business operations.
+      </p >
+
+  
+      <label for="colorSelect">Choose background color: </label>
+      <select id="colorSelect">
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="white">White</option>
+      </select>
     </section>
   </main>
+
+  <script>
+  
+    const card = document.querySelector(".card");
+    const select = document.getElementById("colorSelect");
+
+    select.addEventListener("change", function () {
+      card.style.backgroundColor = this.value;
+ 
+      if (this.value === "white") {
+        card.style.color = "black";
+      } else {
+        card.style.color = "white";
+      }
+    });
+  </script>
 </body>
 </html>
