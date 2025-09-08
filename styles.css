@@ -1,5 +1,5 @@
 :root{
-  --card-bg: #f0f6ff;         
+  --card-bg: #f0f6ff;       
   --text: #111827;
   --muted: #4b5563;
   --shadow: 0 6px 20px rgba(0,0,0,.08);
@@ -28,14 +28,13 @@ body{
   text-align: center;         
 }
 
-
 .avatar{
   width: 150px;
   height: 150px;
   display: block;
   margin: 0 auto 16px;
   object-fit: cover;
-  border-radius: 8px;         
+  border-radius: 8px;        
 }
 
 h1{
@@ -47,10 +46,9 @@ h1{
   margin: 0 auto 16px;
   max-width: 48ch;
   line-height: 1.55;
-  text-align: left;          
+  text-align: left;           
   color: var(--muted);
 }
-
 
 .link{
   display: inline-block;
@@ -64,3 +62,4 @@ h1{
   letter-spacing: .2px;
 }
 .link:hover,.link:focus{ filter: brightness(.95); }
+
