@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>MP0 Card – Your Name</title>
+  <title>MP0 Card – tao</title>
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
@@ -13,42 +13,42 @@
       <img
         class="avatar"
         src="./profile.jpg"
-        alt="Portrait of Your Name"
+        alt="Portrait of tao"
         width="150" height="150"
       />
-   
-      <h1 id="name">tao</h1>
-  
-      <p class="email">jw164@illinois.edu</p >
-  
-      <p class="bio">
-      I am a Master’s student in Information Management at UIUC with a background in Polymer Materials. I enjoy applying data analysis, Python, SQL, and visualization tools like Tableau and PowerBI to solve real-world problems in supply chain and business operations.
-      </p >
 
-  
-      <label for="colorSelect">Choose background color: </label>
-      <select id="colorSelect">
-        <option value="red">Red</option>
-        <option value="blue">Blue</option>
-        <option value="white">White</option>
-      </select>
+      <h1 id="name">tao</h1>
+
+      <p class="bio">
+        I am a Master’s student in Information Management at UIUC with a background in Polymer Materials.
+        I enjoy applying data analysis, Python, SQL, and visualization tools like Tableau and PowerBI to solve
+        real-world problems in supply chain and business operations.
+      </p>
+
+      <a class="link" href="https://github.com/jw164" target="_blank" rel="noopener noreferrer">
+        Visit my GitHub
+      </a>
+
+    
+      <div class="control">
+        <label for="colorSelect">Choose background color: </label>
+        <select id="colorSelect">
+          <option value="red">Red</option>
+          <option value="blue">Blue</option>
+          <option value="white">White</option>
+        </select>
+      </div>
     </section>
   </main>
 
   <script>
-  
     const card = document.querySelector(".card");
     const select = document.getElementById("colorSelect");
-
     select.addEventListener("change", function () {
       card.style.backgroundColor = this.value;
- 
-      if (this.value === "white") {
-        card.style.color = "black";
-      } else {
-        card.style.color = "white";
-      }
+      card.style.color = (this.value === "white") ? "black" : "white";
     });
   </script>
 </body>
 </html>
+
